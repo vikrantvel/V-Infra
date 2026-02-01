@@ -4,17 +4,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V INFRA - Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
+    <title>V Infra - Geotechnical Solutions</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <img src="logo.png" alt="V INFRA Logo" class="logo">
-            <div class="coming-soon">COMING SOON</div>
+
+    <style>
+        /* ========== BACKGROUND ========== */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url("background.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* ========== GLASS BASE ========== */
+
+        .glass {
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            transition: 0.4s ease;
+        }
+
+        .glass:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 14px 45px rgba(0, 0, 0, 0.45);
+        }
+
+        /* ========== LAYOUT ========== */
+
+        .wrapper {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* HEADER */
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 35px;
+        }
+
+        .header img {
+            height: 130px;
+        }
+
+        /* CENTER BOX */
+
+        .center-box {
+            margin-top: 40px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .center-box h2 {
+            color: #9c6a2f;
+            margin-top: 0;
+        }
+
+        .center-box p {
+            font-size: 18px;
+        }
+
+        /* GRID */
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* LISTS */
+
+        .box {
+            padding: 30px;
+        }
+
+        .box h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+        }
+
+        li::before {
+            content: "";
+            width: 8px;
+            height: 14px;
+            border: solid #000;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 6px;
+            top: 4px;
+        }
+
+        /* VALUE BAR */
+
+        .value-bar {
+            margin-top: 40px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .value-bar h3 {
+            color: #9c6a2f;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .value-bar p {
+            font-weight: 700;
+            color: #9c6a2f;
+            font-size: 24px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        /* COMING SOON NOTE */
+
+        .coming-soon-note {
+            margin-top: 40px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .coming-soon-note p {
+            color: #9c6a2f;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        /* MOBILE */
+
+        @media(max-width:900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <img src="assets/maccaferri.png">
+
+            <img src="assets/vinfra-logo.png">
+
         </div>
+
+        <!-- INTRO -->
+        <div class="center-box glass">
+
+            <h2>Engineered Solutions. Proven Execution. Trusted Outcomes.</h2>
+
+            <p><b>Vel Geotech Infracon (V Infra)</b> is an Authorized Applicator of Maccaferri Environmental Solutions
+                Pvt. Ltd., delivering innovative geotechnical and infrastructure solutions across diverse and
+                challenging project environments.</p>
+
+            <p>Working in close collaboration with Maccaferri technical experts, V Infra provides end-to-end solutions
+                from engineering design and product supply to on-ground execution ensuring technical reliability, cost
+                efficiency, and assured project delivery.</p>
+
+        </div>
+
+        <!-- TWO COLUMNS -->
+        <div class="grid">
+
+            <div class="box glass">
+
+                <h3>V Infra&#39;s Core Geotechnically Engineered Solutions</h3>
+
+                <ul class="tick-list">
+                    <li>Reinforced Soil Retaining Walls and Slopes</li>
+                    <li>Vertical Walls with Concrete Facing Systems</li>
+                    <li>Gabion Gravity Retaining Walls</li>
+                    <li>Rockfall Protections, Barriers and Hazard Mitigation Measures</li>
+                    <li>Steep Cut Slope Stabilization and Protection Systems</li>
+                    <li>Hydraulic and River Training Works</li>
+                    <li>Soil Erosion Control - Hydro-Mulching and Bio-Engineering Solutions</li>
+                    <li>Complete Range of Geosynthetics</li>
+                    <li>Other Integrated Civil Works</li>
+                </ul>
+
+            </div>
+
+            <div class="box glass">
+
+                <h3>Why V Infra</h3>
+
+                <ul class="tick-list">
+                    <li>Backed by Maccaferri globally proven systems and technologies</li>
+                    <li>Customized engineering design and strong execution capability</li>
+                    <li>Single-point accountability from concept to completion</li>
+                    <li>Solutions optimized for performance, durability, and lifecycle cost</li>
+                    <li>Agile, responsive, and execution-focused project approach</li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+        <!-- VALUE BAR -->
+        <div class="value-bar glass">
+
+            <h3>Delivering Value at Every Stage</h3>
+            <p>Driving win-win outcomes for end customers, clients, consultants, and partners</p>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer glass">
+
+            <div>
+                <b>Contact</b><br><br>
+                Business Operations from CHENNAI<br>
+                M: +91 9789988677<br>
+                E: info@vinfra.ltd<br>
+                Web: www.vinfra.ltd
+            </div>
+
+            <div>
+                <b>Registered Office</b><br><br>
+                SF No.157/15C, Vasur,<br>
+                Ranipet District, 632514,<br>
+                Tamilnadu
+            </div>
+
+        </div>
+
+        <!-- COMING SOON NOTE -->
+        <div class="coming-soon-note glass">
+            <p>MORE DETAILS COMING SOON...</p>
+        </div>
+
     </div>
+
 </body>
 
 </html>
