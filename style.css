@@ -104,4 +104,125 @@ body {
         right: 10px;
         max-width: none;
     }
+
+    .swap-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .right-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    </style>.value-bar {
+        background: #eaf2fb;
+        border: 1.5px solid #1e3f8f;
+        text-align: center;
+        padding: 18px;
+        margin-top: 40px;
+    }
+
+    .value-bar h3 {
+        margin: 0;
+        color: #9c6a2f;
+        font-weight: 700;
+    }
+
+    .value-bar p {
+        margin-top: 6px;
+        font-weight: 700;
+        color: #9c6a2f;
+    }
+
+}
+
+/* CLEAN BULLETS FIX */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+}
+
+li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 6px;
+    top: 10px;
+}
+
+/* PERFECT TICK BULLETS (NO ENCODING ISSUES) */
+
+.tick-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tick-list li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 12px;
+}
+
+.tick-list li::before {
+    content: "";
+    width: 8px;
+    height: 14px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 6px;
+    top: 4px;
+}
+
+/* ===== FORCE LEFT ALIGN HERO INTRO ===== */
+
+.center-box.hero-intro,
+.center-box.hero-intro * {
+    text-align: left !important;
+}
+
+/* REMOVE GLASS */
+
+.center-box.hero-intro {
+    background: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* HEADING STYLE */
+
+.center-box.hero-intro h2 {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 56px !important;
+    font-weight: 800 !important;
+    color: #9c6a2f !important;
+    margin-bottom: 22px !important;
+}
+
+/* DESCRIPTION TEXT */
+
+.center-box.hero-intro p {
+    font-size: 16px !important;
+    /* reduced by 2 */
+    line-height: 1.6 !important;
+    color: #ffffff !important;
 }
