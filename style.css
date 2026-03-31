@@ -100,10 +100,10 @@ header.scrolled {
   flex-direction: column;
 }
 .logo-text { 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Optima', 'Candara', sans-serif;
   font-size: 20px;
-  font-weight: 800;
-  color: var(--primary);
+  font-weight: 700;
+  color: #AF7C45;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
